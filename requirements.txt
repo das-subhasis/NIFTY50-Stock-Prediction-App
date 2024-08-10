@@ -10,4 +10,5 @@ plotly
 DateTime
 GoogleNews
 scikit-learn
+pandas_ta
 ta
