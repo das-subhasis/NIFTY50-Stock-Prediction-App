@@ -36,7 +36,6 @@ def format_ticker(symbol):
 
 class StockApp:
     def __init__(self):
-        locale.setlocale(locale.LC_ALL, 'en_in')
         self.apply_lstm = None
         self.get_news = None
         self.vis_plots = None
@@ -104,7 +103,7 @@ class StockApp:
         with col2:
             st.write('52 Week High: ', self.info['fiftyTwoWeekHigh'])
             st.write('52 Week Low: ', self.info['fiftyTwoWeekLow'])
-            st.write('Market Cap. : ', locale.currency(self.info['marketCap'], grouping=True))
+            st.write('Market Cap. : ', self.info['marketCap'])
             st.write('Volume : ', self.info['volume'])
         if self.display_info:
             st.write("***")
